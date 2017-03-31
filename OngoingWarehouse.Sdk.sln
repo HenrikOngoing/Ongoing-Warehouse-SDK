@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OngoingWarehouse.Sdk", "OngoingWarehouse.Sdk\OngoingWarehouse.Sdk.csproj", "{DC7601D3-18C5-4EFA-831D-265F021C2856}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OngoingWarehouse.Sdk.Example", "OngoingWarehouse.Sdk.Example\OngoingWarehouse.Sdk.Example.csproj", "{38B31477-765D-4848-80AB-067F6AF65C8A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OngoingWarehouse.Sdk.Example.Webshop", "OngoingWarehouse.Sdk.Example.Webshop\OngoingWarehouse.Sdk.Example.Webshop.csproj", "{38B31477-765D-4848-80AB-067F6AF65C8A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

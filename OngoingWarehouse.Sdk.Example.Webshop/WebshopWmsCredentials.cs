@@ -1,4 +1,4 @@
-﻿namespace OngoingWarehouse.Sdk.Example
+﻿namespace OngoingWarehouse.Sdk.Example.Webshop
 {
    public static class WebshopWmsCredentials
    {

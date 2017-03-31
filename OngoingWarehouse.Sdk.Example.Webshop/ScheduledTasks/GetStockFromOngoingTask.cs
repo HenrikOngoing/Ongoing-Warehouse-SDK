@@ -1,11 +1,12 @@
-﻿using OngoingWarehouse.Sdk.Example.WebshopEntities;
+﻿using OngoingWarehouse.Sdk.Example.Webshop;
+using OngoingWarehouse.Sdk.Example.Webshop.WebshopEntities;
 using OngoingWarehouse.Sdk.Getters;
 using OngoingWarehouse.Sdk.OngoingWarehouseAPI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace OngoingWarehouse.Sdk.Example.ScheduledTasks
+namespace OngoingWarehouse.Sdk.Example.ScheduledTasks.Webshop
 {
    /**
     * Execute this task periodicaly. For example every 15 minutes the get the stock from the warehouse.

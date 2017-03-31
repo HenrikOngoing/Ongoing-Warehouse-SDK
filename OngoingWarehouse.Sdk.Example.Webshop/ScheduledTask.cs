@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace OngoingWarehouse.Sdk.Example
+namespace OngoingWarehouse.Sdk.Example.Webshop
 {
    public abstract class ScheduledTask
    {

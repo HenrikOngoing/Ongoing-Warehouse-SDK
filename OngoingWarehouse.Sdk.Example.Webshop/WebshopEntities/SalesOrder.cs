@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace OngoingWarehouse.Sdk.Example.WebshopEntities
+namespace OngoingWarehouse.Sdk.Example.Webshop.WebshopEntities
 {
    public class SalesOrder
    {

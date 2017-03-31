@@ -1,8 +1,8 @@
-﻿using OngoingWarehouse.Sdk.Example.WebshopEntities;
+﻿using OngoingWarehouse.Sdk.Example.Webshop.WebshopEntities;
 using OngoingWarehouse.Sdk.OngoingWarehouseAPI;
 using OngoingWarehouse.Sdk.Updaters;
 
-namespace OngoingWarehouse.Sdk.Example
+namespace OngoingWarehouse.Sdk.Example.Webshop
 {
    /**
     * Execute the run method when a change of an article in the webshops article registry has been performed.
