@@ -43,6 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Getters\InOrderGetter.cs" />
+    <Compile Include="Getters\InOrderGetterSettings.cs" />
     <Compile Include="Getters\OrderGetter.cs" />
     <Compile Include="Getters\StockGetter.cs" />
     <Compile Include="IGetter.cs" />
@@ -58,6 +60,7 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
     <Compile Include="SoapService.cs" />
+    <Compile Include="Updaters\InOrderUpdater.cs" />
     <Compile Include="Updaters\OrderUpdater.cs" />
     <Compile Include="Getters\OrderGetterSettings.cs" />
   </ItemGroup>
