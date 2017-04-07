@@ -4,13 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{86A64CAC-98BA-4B14-9667-65D48ED468B8}</ProjectGuid>
+    <ProjectGuid>{9052E4B0-7633-4453-80E3-282F9CDEB2A3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>OngoingWarehouse.Sdk.Example</RootNamespace>
-    <AssemblyName>OngoingWarehouse.Sdk.Example</AssemblyName>
+    <RootNamespace>OngoingWarehouse.Sdk.Example.Erp</RootNamespace>
+    <AssemblyName>OngoingWarehouse.Sdk.Example.Erp</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -40,9 +41,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ErpEntities\PurchaseOrder.cs" />
+    <Compile Include="ErpEntities\PurchaseOrderLine.cs" />
+    <Compile Include="OnChangeTasks\UpdatePurchaseOrderInOngoingTask.cs" />
+    <Compile Include="ScheduledTasks\GetPurchaseOrdersInOngoingTask.cs" />
+    <Compile Include="WmsCredentials.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ScheduledTask.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OngoingWarehouse.Sdk.Example\OngoingWarehouse.Sdk.Example.csproj">
+      <Project>{86A64CAC-98BA-4B14-9667-65D48ED468B8}</Project>
+      <Name>OngoingWarehouse.Sdk.Example</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OngoingWarehouse.Sdk\OngoingWarehouse.Sdk.csproj">
+      <Project>{dc7601d3-18c5-4efa-831d-265f021c2856}</Project>
+      <Name>OngoingWarehouse.Sdk</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -4,13 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{86A64CAC-98BA-4B14-9667-65D48ED468B8}</ProjectGuid>
+    <ProjectGuid>{38B31477-765D-4848-80AB-067F6AF65C8A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>OngoingWarehouse.Sdk.Example</RootNamespace>
     <AssemblyName>OngoingWarehouse.Sdk.Example</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -40,9 +41,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OnChangeTasks\UpdateArticleInOngoingTask.cs" />
+    <Compile Include="OnChangeTasks\UpdateOrderInOngoingTask.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ScheduledTask.cs" />
+    <Compile Include="ScheduledTasks\GetOrdersFromOngoingTask.cs" />
+    <Compile Include="ScheduledTasks\GetStockFromOngoingTask.cs" />
+    <Compile Include="WebshopEntities\Customer.cs" />
+    <Compile Include="WebshopEntities\InventoryArticle.cs" />
+    <Compile Include="WebshopEntities\SalesOrder.cs" />
+    <Compile Include="WebshopEntities\SalesOrderLine.cs" />
+    <Compile Include="WebshopEntities\Stock.cs" />
+    <Compile Include="WebshopWmsCredentials.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OngoingWarehouse.Sdk.Example\OngoingWarehouse.Sdk.Example.csproj">
+      <Project>{86a64cac-98ba-4b14-9667-65d48ed468b8}</Project>
+      <Name>OngoingWarehouse.Sdk.Example</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OngoingWarehouse.Sdk\OngoingWarehouse.Sdk.csproj">
+      <Project>{dc7601d3-18c5-4efa-831d-265f021c2856}</Project>
+      <Name>OngoingWarehouse.Sdk</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

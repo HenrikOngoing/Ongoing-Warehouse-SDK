@@ -5,7 +5,11 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OngoingWarehouse.Sdk", "OngoingWarehouse.Sdk\OngoingWarehouse.Sdk.csproj", "{DC7601D3-18C5-4EFA-831D-265F021C2856}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OngoingWarehouse.Sdk.Example", "OngoingWarehouse.Sdk.Example\OngoingWarehouse.Sdk.Example.csproj", "{38B31477-765D-4848-80AB-067F6AF65C8A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OngoingWarehouse.Sdk.Example.Webshop", "OngoingWarehouse.Sdk.Example.Webshop\OngoingWarehouse.Sdk.Example.Webshop.csproj", "{38B31477-765D-4848-80AB-067F6AF65C8A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OngoingWarehouse.Sdk.Example.Erp", "OngoingWarehouse.Sdk.Example.Erp\OngoingWarehouse.Sdk.Example.Erp.csproj", "{9052E4B0-7633-4453-80E3-282F9CDEB2A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OngoingWarehouse.Sdk.Example", "OngoingWarehouse.Sdk.Example\OngoingWarehouse.Sdk.Example.csproj", "{86A64CAC-98BA-4B14-9667-65D48ED468B8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{38B31477-765D-4848-80AB-067F6AF65C8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38B31477-765D-4848-80AB-067F6AF65C8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38B31477-765D-4848-80AB-067F6AF65C8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9052E4B0-7633-4453-80E3-282F9CDEB2A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9052E4B0-7633-4453-80E3-282F9CDEB2A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9052E4B0-7633-4453-80E3-282F9CDEB2A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9052E4B0-7633-4453-80E3-282F9CDEB2A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86A64CAC-98BA-4B14-9667-65D48ED468B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86A64CAC-98BA-4B14-9667-65D48ED468B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86A64CAC-98BA-4B14-9667-65D48ED468B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86A64CAC-98BA-4B14-9667-65D48ED468B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

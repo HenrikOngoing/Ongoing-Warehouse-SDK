@@ -22,6 +22,15 @@ namespace OngoingWarehouse.Sdk
          _goodsOwner = connectionCredentials.GoodsOwner;
       }
 
+      internal void UpdateOrCreatePurchaseOrder(InOrder inOrder)
+      {
+         var response = _soapClient.ProcessInOrder(_goodsOwner.Name, _user.Name, _user.Password, inOrder);
+         if (!response.Success)
+         {
+            throw CreateSdkException(response);
+         }
+      }
+
       public void UpdateOrCreateOrder(CustomerOrder order)
       {
          var response = _soapClient.ProcessOrder(_goodsOwner.Name, _user.Name, _user.Password, order);
@@ -61,6 +70,21 @@ namespace OngoingWarehouse.Sdk
          };
          var response = _soapClient.GetOrdersByQuery(_goodsOwner.Name, _user.Name, _user.Password, query);
          return response.Orders;
+      }
+
+      public IEnumerable<ReceivedInOrder> GetInOrders(DateTime lastExecutionTime, int? minimumInOrderStatusToGet, int? maximumInOrderStatusToGet)
+      {
+         var query = new InOrderFilters();
+         if (minimumInOrderStatusToGet.HasValue)
+         {
+            query.InOrderStatusFrom = minimumInOrderStatusToGet;
+         }
+         if (maximumInOrderStatusToGet.HasValue)
+         {
+            query.InOrderStatusTo = maximumInOrderStatusToGet;
+         }
+         var response = _soapClient.GetInOrdersByQuery(_goodsOwner.Name, _user.Name, _user.Password, query);
+         return response.InOrders;
       }
 
       private static ServiceSoapClient CreateClient(string systemName)

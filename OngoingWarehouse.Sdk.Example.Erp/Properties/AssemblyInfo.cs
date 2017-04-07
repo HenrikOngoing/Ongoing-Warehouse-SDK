@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("OngoingWarehouse.Sdk.Example")]
+[assembly: AssemblyTitle("OngoingWarehouse.Sdk.Example.Erp")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("OngoingWarehouse.Sdk.Example")]
+[assembly: AssemblyProduct("OngoingWarehouse.Sdk.Example.Erp")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("86a64cac-98ba-4b14-9667-65d48ed468b8")]
+[assembly: Guid("9052e4b0-7633-4453-80e3-282f9cdeb2a3")]
 
 // Version information for an assembly consists of the following four values:
 //

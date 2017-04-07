@@ -1,11 +1,12 @@
-﻿using OngoingWarehouse.Sdk.Example.WebshopEntities;
+﻿using OngoingWarehouse.Sdk.Example.Webshop;
+using OngoingWarehouse.Sdk.Example.Webshop.WebshopEntities;
 using OngoingWarehouse.Sdk.Getters;
 using OngoingWarehouse.Sdk.OngoingWarehouseAPI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace OngoingWarehouse.Sdk.Example.ScheduledTasks
+namespace OngoingWarehouse.Sdk.Example.ScheduledTasks.Webshop
 {
    public class GetOrdersFromOngoingTask : ScheduledTask
    {

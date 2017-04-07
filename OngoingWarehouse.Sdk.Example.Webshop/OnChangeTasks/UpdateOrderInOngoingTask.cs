@@ -1,9 +1,10 @@
-﻿using OngoingWarehouse.Sdk.Example.WebshopEntities;
+﻿using OngoingWarehouse.Sdk.Example.Webshop;
+using OngoingWarehouse.Sdk.Example.Webshop.WebshopEntities;
 using OngoingWarehouse.Sdk.OngoingWarehouseAPI;
 using OngoingWarehouse.Sdk.Updaters;
 using System.Linq;
 
-namespace OngoingWarehouse.Sdk.Example.OnChangeTasks
+namespace OngoingWarehouse.Sdk.Example.OnChangeTasks.Webshop
 {
    /**
     * Execute this task when a new order has been received in the webshop or when an existing order is updated.
@@ -42,7 +43,7 @@ namespace OngoingWarehouse.Sdk.Example.OnChangeTasks
          return customerOrder;
       }
 
-      private static OngoingWarehouseAPI.Customer MapCustomer(WebshopEntities.Customer customer)
+      private static OngoingWarehouseAPI.Customer MapCustomer(Example.Webshop.WebshopEntities.Customer customer)
       {
          var ongoingCustomer = new OngoingWarehouseAPI.Customer
          {
